@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT ME</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <article class="wrapper">
+      <section>
+        <div class="container">
+          <form
+            action="https://formspree.io/f/myyozqne"
+            method="POST"
+            id="my-form"
+          >
+            <center><h2>GET IN TOUCH WITH ME</h2></center>
+            <div class="form-group">
+              <label for="firstName"> First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Your first name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="latsName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Your last name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Your Email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="massage">Message</label>
+              <textarea
+                name="massage"
+                id="massage"
+                placeholder="Your message"
+                cols="30"
+                rows="7"
+              ></textarea>
+            </div>
+
+            <button type="submit">Submit</button>
+            <div id="status"></div>
+            <br />
+            <center>
+              <button
+                class="homebutton"
+                onclick=" document.location='home.html'"
+              >
+                BACK TO HOME
+              </button>
+            </center>
+          </form>
+        </div>
+      </section>
+    </article>
+    <script src="contact.js"></script>
+  </body>
+</html>
